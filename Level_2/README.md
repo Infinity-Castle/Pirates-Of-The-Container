@@ -3,7 +3,7 @@ Captain cargo wants you to interact with the level inorder to get the flag
 
 ## TASK
 
-**Image Name**: 
+**Image Name**: ghcr.io/walchand-linux-users-group/meta/2:latest
 
 ## HINT
 

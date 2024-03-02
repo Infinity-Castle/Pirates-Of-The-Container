@@ -3,7 +3,7 @@ This time captain cargo don't want you to interact with the container, though he
 
 ## TASK
 
-**Image Name**: 
+**Image Name**: ghcr.io/walchand-linux-users-group/meta/4:1.1
 
 **Path to flag file**: /first_level/second_level/third_level/fourth_level
 
