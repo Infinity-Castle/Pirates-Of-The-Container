@@ -19,13 +19,13 @@ if docker ps -a --filter "name=the_game" --format "{{.Names}}" | grep -q "the_ga
     docker start the_game
     docker attach the_game
 else
-    if docker images --format '{{.Repository}}:{{.Tag}}' | grep -q "^wildwarrior44/game:latest$"; then
+    if docker images --format '{{.Repository}}:{{.Tag}}' | grep -q "^wildwarrior44/the_game:latest$"; then
         echo "Level already exists"
     else
         echo "Pulling level..."
-        docker pull wildwarrior44/game &> /dev/null
+        docker pull wildwarrior44/the_game &> /dev/null
     fi
 
     echo "Creating and running the container..."
-    docker run --hostname wlug --user root -v /var/run/docker.sock:/var/run/docker.sock -it --name the_game wildwarrior44/game /bin/bash
+    docker run --hostname wlug --user root -v /var/run/docker.sock:/var/run/docker.sock -it --name the_game wildwarrior44/the_game /bin/bash
 fi
